@@ -13,6 +13,9 @@ df=pd.DataFrame(data)
 new_row={'name':'ghi','age':40,'gender':'F'}
 df.loc[len(df.index)]=new_row
 
+new_row_2={'name':'jkl','age':50,'gender':'F'}
+df.loc[len(df.index)]=new_row_2
+
 data_dir='data'
 os.makedirs(data_dir,exist_ok=True)
 filepath=os.path.join(data_dir,'mydata.csv')
